@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 			  android:orientation="vertical"
+			  android:layout_width="fill_parent"
+ 			  android:layout_height="fill_parent">
+ 
+	<!-- Top -->
+ 
+  	<LinearLayout android:name="@+id/top_container"
+ 				  android:orientation="horizontal"
+   				  android:layout_weight="0"
+                  android:layout_width="fill_parent"
+                  android:layout_height="50px"
+                  android:background="@drawable/barbackground">
+   	</LinearLayout>
+ 
+ 
+  	<!-- Central row -->
+ 
+    <LinearLayout android:name="@+id/center_container"
+     		      android:orientation="vertical"
+     			  android:layout_weight="1"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent">   
+                  
+ 			<ScrollView	android:scrollbars="vertical"
+ 						android:layout_width="fill_parent"
+ 						android:layout_height="fill_parent"    
+   						android:orientation="horizontal"
+   						android:src="@drawable/icon"
+    					android:layout_weight="1"
+    					android:background="@drawable/graybackground"
+  						android:layout_gravity="center_vertical">
+  							<LinearLayout	android:name="@+id/cross_container"
+   											android:orientation="vertical"
+   											android:layout_weight="0"
+ 		   									android:layout_width="fill_parent"
+ 											android:layout_height="fill_parent"
+ 											android:weightSum="2"
+ 											android:gravity="center"
+   											android:background="@drawable/icon">
+   											<LinearLayout	android:name="@+id/cross_centre_top_container"
+   															android:orientation="horizontal"
+   															android:layout_weight="1"
+ 		   													android:layout_width="fill_parent"
+ 															android:layout_height="fill_parent"
+ 															android:gravity="center"
+ 															android:weightSum="2"
+   															android:background="@drawable/icon">
+   											
+   						   					</LinearLayout>
+   						   					<LinearLayout	android:name="@+id/cross_centre_bottom_container"
+   															android:orientation="horizontal"
+   															android:layout_weight="1"
+ 		   													android:layout_width="fill_parent"
+ 															android:layout_height="fill_parent"
+ 															android:gravity="center"
+ 															android:weightSum="2"
+   															android:background="@drawable/icon">
+   											
+   						   					</LinearLayout>
+   											
+   						   </LinearLayout>
+  			
+  			</ScrollView>
+
+    </LinearLayout>
+  
+  	<LinearLayout	android:name="@+id/bottom_container"
+   					android:orientation="horizontal"
+   					android:layout_weight="0"
+ 		   			android:layout_width="fill_parent"
+ 					android:layout_height="50px"
+ 					android:weightSum="3"
+ 					android:gravity="center"
+   					android:background="@drawable/barbackground">
+  	
+  				<Button android:layout_weight="1"
+  							 android:text="Check Help" 
+  					         android:id="@+id/check_button" 
+  					         android:layout_width="wrap_content" 
+  					         android:layout_height="fill_parent"
+  					         android:layout_marginLeft="10px"
+  					         android:layout_marginRight="10px"
+  					         android:layout_marginTop="12px"
+  					         android:layout_marginBottom="12px"
+  					         android:background="@drawable/blackbuttonbg">
+  					         </Button>
+  				<Button android:layout_weight="1"
+  							 android:text="Learn Help" 
+  							 android:id="@+id/learn_button" 
+  							 android:layout_width="wrap_content" 
+  							 android:layout_height="fill_parent"
+  							 android:layout_marginLeft="10px"
+  					         android:layout_marginRight="10px"
+  					         android:layout_marginTop="12px"
+  					         android:layout_marginBottom="12px"
+  							 android:background="@drawable/blackbuttonbg"></Button>
+  				<Button android:layout_weight="1"
+  							 android:text="Act Help" 
+  							 android:id="@+id/act_button" 
+  							 android:layout_width="wrap_content" 
+  							 android:layout_height="fill_parent"
+  							 android:layout_marginLeft="10px"
+  					         android:layout_marginRight="10px"
+  					         android:layout_marginTop="12px"
+  					         android:layout_marginBottom="12px"
+  							 android:background="@drawable/blackbuttonbg"></Button>
+
+  	</LinearLayout>
+ 
+ 
+</LinearLayout>
